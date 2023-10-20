@@ -1,5 +1,6 @@
 let nivelHeroi = ["Ferro", "Bronze", "Prata", //níveis
 "Ouro", "Diamante", "Lendário", "Imortal"];
+calcularPartidas (50,10); //chamada da função
 
 function calcularPartidas (vitorias, derrotas, rankeadas) { //função que calcula quant. de rank
     rankeadas = vitorias - derrotas; //a variável vai realizar o cálculo
@@ -20,4 +21,4 @@ function calcularPartidas (vitorias, derrotas, rankeadas) { //função que calcu
         console.log (`O Herói tem saldo de "${rankeadas}" e está no nível de ${nivelHeroi [6]}!`); 
     }
 }
-console.log (calcularPartidas (50,10)); //chamada da função
+
