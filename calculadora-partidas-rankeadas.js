@@ -1,6 +1,6 @@
 let nivelHeroi = ["Ferro", "Bronze", "Prata", //níveis
 "Ouro", "Diamante", "Lendário", "Imortal"];
-calcularPartidas (50,10); //chamada da função
+calcularPartidas (120,20); //chamada da função
 
 function calcularPartidas (vitorias, derrotas, rankeadas) { //função que calcula quant. de rank
     rankeadas = vitorias - derrotas; //a variável vai realizar o cálculo
