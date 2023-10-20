@@ -1,11 +1,9 @@
 let nivelHeroi = ["Ferro", "Bronze", "Prata", //níveis
 "Ouro", "Diamante", "Lendário", "Imortal"];
 
-function calcularPartidas (vitorias, derrotas) { //função que calcula quant. de rank
-   let rankeadas = vitorias - derrotas; //a variável vai realizar o cálculo
-   return rankeadas;                   //e irá guardar o resultado   
-}
-function ganharPerder (rankeadas){
+function calcularPartidas (vitorias, derrotas, rankeadas) { //função que calcula quant. de rank
+    rankeadas = vitorias - derrotas; //a variável vai realizar o cálculo
+
     if (rankeadas < 10) { //se o resultado for menor... //ferro
         console.log (`O Herói tem saldo de "${rankeadas}" e está no nível de ${nivelHeroi [0]}!`);
     } else if (rankeadas >= 11 && rankeadas <= 20) {   //bronze
@@ -23,4 +21,3 @@ function ganharPerder (rankeadas){
     }
 }
 console.log (calcularPartidas (50,10)); //chamada da função
-console.log (ganharPerder(40));
